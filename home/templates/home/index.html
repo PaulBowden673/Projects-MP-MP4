@@ -35,24 +35,33 @@
         <div class="card">
             <img src="{% static 'media/training.jpg' %}" class="card_img card_img-bottom" alt="" />
             <h3 class="card-title text-center">Goals?</h3>
-            <h4 class="text-center">What are Your Goals? We can help you if you want to <a
-                    href="{% url 'lose-weight' %}">Lose weight</a>, <a href="#">Gain Weight</a>, if you feel a need to
-                improve your <a href="#">Endurance</a>, or if you want to have simply a <a href="#">Healthy Lifestyle.</a>
+            <h4 class="text-center">What are Your Goals? We can help you if you want to <a href="">Lose weight</a>, <a
+                    href="#">Gain Weight</a>, if you feel a need to
+                improve your <a href="#">Endurance</a>, or if you want to have simply a <a href="#">Healthy
+                    Lifestyle.</a>
             </h4>
         </div>
         <div class="card">
             <img src="{% static 'media/blog.jpg' %}" class="card_img card_img-top" alt="" />
             <h3 class="card-title text-center">BLOG Community</h3>
-            <h4 class="text-center">Only members can participate in our:</h4>
-            <h3 class="text-center p-2"><a href="#"><button href="" type="button"
-                        class="btn btn-success btn-lg btn-block">BLOG</button></a></h3>
+            <div class="card-body">
+                <h4 class="text-center">Only members can participate in our:</h4>
+            </div>
+            <div class="card-footer">
+                <h3 class="text-center p-2"><a href="#"><button href="" type="button"
+                            class="btn btn-success btn-lg btn-block">BLOG</button></a></h3>
+            </div>
         </div>
         <div class="card">
             <img src="{% static 'media/squat.jpg' %}" class="card_img card_img-bottom" alt="" />
             <h3 class="card-title text-center">Maximum Effort STORE</h3>
-            <h4 class="text-center">Free delivery on orders over £{{ free_delivery_threshold }}!</h4>
-            <h3 class="text-center p-2"><a href="{% url 'products' %}"><button type="button"
-                        class="btn btn-warning btn-lg btn-block">SHOP NOW!</button></a></h3>
+            <div class="card-body">
+                <h4 class="text-center">Free delivery on orders over £{{ free_delivery_threshold }}!</h4>
+            </div>
+            <div class="card-footer">
+                <h3 class="text-center p-2"><a href=""><button type="button"
+                            class="btn btn-warning btn-lg btn-block">SHOP NOW!</button></a></h3>
+            </div>
         </div>
     </div>
 </section>
