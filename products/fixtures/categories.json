@@ -1,0 +1,82 @@
+[
+    {
+      "pk": 1,
+      "model": "products.category",
+      "fields": {
+        "name": "mens_cloathing",
+        "friendly_name": "Mens cloathing"
+      }
+    }, 
+    {
+      "pk": 2,
+      "model": "products.category",
+      "fields": {
+        "name": "womens_cloathing",
+        "friendly_name": "Womens cloathing"
+      }
+    },
+    {
+      "pk": 3,
+      "model": "products.category",
+      "fields": {
+        "name": "clearance",
+        "friendly_name": "Clearance"
+      }
+    },
+    {
+      "pk": 4,
+      "model": "products.category",
+      "fields": {
+        "name": "deals",
+        "friendly_name": "Deals"
+      }
+    },
+    {
+      "pk": 5,
+      "model": "products.category",
+      "fields": {
+        "name": "accesories",
+        "friendly_name": "Accesories"
+      }
+    },
+    {
+      "pk": 6,
+      "model": "products.category",
+      "fields": {
+        "name": "vitamins",
+        "friendly_name": "Vitamins"
+      }
+    },
+    {
+      "pk": 7,
+      "model": "products.category",
+      "fields": {
+        "name": "proteins",
+        "friendly_name": "Proteins"
+      }
+    },
+    {
+      "pk": 8,
+      "model": "products.category",
+      "fields": {
+        "name": "bcaa",
+        "friendly_name": "Bcaa"
+      }
+    },
+    {
+      "pk": 9,
+      "model": "products.category",
+      "fields": {
+        "name": "fatburner",
+        "friendly_name": "Fat burner"
+      }
+    },
+    {
+      "pk": 10,
+      "model": "products.category",
+      "fields": {
+        "name": "preworkout",
+        "friendly_name": "Pre Workout"
+      }
+    }
+  ]

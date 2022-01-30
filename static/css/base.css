@@ -1,0 +1,652 @@
+@import url("https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap");
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    overflow-x: hidden;
+    height: calc(100vh - 164px);
+    font-family: "Lato";
+}
+
+.bg-black {
+    background: rgba(43, 39, 39, 0.85);
+}
+
+.text-black {
+    color: #000;
+}
+
+.text-black:hover {
+    color: #000 !important;
+}
+
+.fa-style {
+    color: #ffc107;
+}
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.main-logo-link {
+    width: fit-content;
+    font-family: "Stalinist One", cursive;
+    color: #ffc107;
+}
+
+.main-logo-link:hover {
+    color: #ffc107 !important;
+    text-decoration: underline;
+}
+.text-nav {
+    font-family: "Stalinist One", cursive;
+    color: #ffc107;
+    font-size: 1.2rem;
+}
+
+.text-nav:hover {
+    color: #ffc107 !important;
+    text-decoration: underline;
+}
+
+.dropdown-menu {
+    background: rgba(43, 39, 39) !important;
+}
+
+.dropdown-item {
+    color: #ffc107 !important;
+    font-weight: bold !important;
+}
+
+.dropdown-item:hover {
+    background: rgb(12, 9, 9) !important;
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: #ffc107 !important;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 193, 7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
+/* Section 1 */
+#section_1 {
+    background-image: url("/static/media/main.jpg");
+    background-size: cover;
+    position: relative;
+    top: 0;
+    height: 100vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: 1;
+}
+
+.container-headline {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    height: fit-content;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-family: "Stalinist One", cursive;
+    background-color: rgba(0, 0, 0, 0.349);
+    border-radius: 20px;
+    margin: auto;
+}
+
+.container-headline h1 {
+    margin-top: 15px;
+    font-size: 5rem;
+    text-shadow: 2px 2px rgb(255, 255, 255);
+}
+
+.container-headline p {
+    font-family: "Pathway Gothic One", sans-serif;
+}
+
+/* Section2 */
+#section2 {
+    background: white;
+    height: fit-content;
+}
+
+.card-container {
+    position: relative;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.card {
+    margin: 15px;
+    -webkit-box-shadow: 0px 9px 24px 6px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 9px 24px 6px rgba(0, 0, 0, 0.384);
+    box-shadow: 0px 9px 24px 6px rgba(0, 0, 0, 0.452);
+    z-index: 2;
+}
+
+.card h3 {
+    font-family: "Stalinist One", cursive;
+}
+
+.card_img {
+    border-radius: 5px;
+}
+
+/* Section3 BLOG */
+#section_3 {
+    background-image: url("/static/media/adult.jpg");
+    background-size: cover;
+    position: relative;
+    top: 0;
+    height: 90vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: 1;
+}
+
+/* Lose weight page */
+#lose-weight {
+    background-image: url("/static/media/lose-weight.jpg");
+    background-size: cover;
+    position: relative;
+    top: 0;
+    height: 100vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.lose-weight {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    height: fit-content;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.747);
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    margin: auto;
+    width: 75%;
+}
+
+.rekomend {
+    margin-top: -200px;
+    margin-bottom: 75px;
+}
+
+.lose-weight h1 {
+    font-family: "Stalinist One", cursive;
+    text-decoration: underline;
+    margin-bottom: 40px;
+    padding-top: 5px;
+}
+
+.gain-weight {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    height: fit-content;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.747);
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    margin: auto;
+    width: 75%;
+}
+
+/* Gain Weight */
+#gain-weight {
+    background-image: url("/static/media/squat.jpg");
+    background-size: cover;
+    position: relative;
+    top: 0;
+    height: 100vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* Endurance page */
+#endurance {
+    background-image: url("/static/media/endurance.jpg");
+    background-size: cover;
+    position: relative;
+    top: 0;
+    height: 100vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* Live healthy page */
+#healthy {
+    background-image: url("/static/media/healthy.jpg");
+    background-size: cover;
+    position: relative;
+    top: 0;
+    height: 100vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* About page */
+#about_page {
+    background-image: url("/static/media/about.jpg");
+    background-size: cover;
+    position: relative;
+    top: 0;
+    height: 100vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.about {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: fit-content;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.61);
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    margin: auto;
+    width: 50%;
+}
+
+.about h1 {
+    font-family: "Stalinist One", cursive;
+    text-decoration: underline;
+    margin-bottom: 40px;
+}
+
+.about p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.about a {
+    color: #ffc107;
+    font-weight: 700;
+}
+
+.about a:hover {
+    text-decoration: underline;
+}
+
+/* Products page */
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: white;
+    z-index: -1;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.nav-products {
+    color: rgb(37, 36, 36) !important;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.products {
+    padding-top: 164px;
+    padding-bottom: 50px;
+}
+
+.btt-button {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.btt-link {
+    cursor: pointer;
+}
+
+/*---------------------------------------- Footer */
+.fh5co-bg {
+    background: rgba(0, 0, 0, 0.75);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+}
+.fh5co-bg .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+#fh5co-footer {
+    padding-top: 2rem;
+    clear: both;
+    position: relative;
+}
+
+#fh5co-footer .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.637);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+#fh5co-footer h1 {
+    font-family: "Stalinist One", cursive;
+    margin-bottom: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ffc107;
+}
+
+#fh5co-footer h3 {
+    font-family: "Stalinist One", cursive;
+    margin-bottom: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ffc107;
+}
+
+#fh5co-footer .fh5co-footer-links {
+    padding: 0;
+    margin: 0;
+    font-family: "Stalinist One", cursive;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#fh5co-footer .fh5co-footer-links li a {
+    color: #ffc107;
+    text-decoration: none;
+}
+#fh5co-footer .fh5co-footer-links li a:hover {
+    text-decoration: underline;
+}
+#fh5co-footer .fh5co-widget {
+    margin-bottom: 30px;
+}
+
+.fh5co-widget a {
+    font-family: "Stalinist One", cursive;
+    color: #ffc107;
+}
+
+
+.fh5co-widget p {
+    color: #ffc107;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.fh5co-widget h3 {
+    color: #ffc107;
+    margin-bottom: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#fh5co-footer .copyright .block {
+    display: block;
+}
+
+.copyright {
+    padding-top: 30px;
+    color: #ffffff;
+}
+/* ------profile */
+.bgprofile {
+    background-image: url("/static/media/sport.jpg");
+}
+
+/* ------------------------------- bootstrap toasts */
+
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 99999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
+}
+
+/* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 10px solid black;
+    position: absolute;
+    top: -10px;
+    right: 36px;
+}
+
+/* Convenience classes - colors copied from Bootstrap */
+.arrow-primary {
+    border-bottom-color: #007bff !important;
+}
+
+.arrow-secondary {
+    border-bottom-color: #6c757d !important;
+}
+
+.arrow-success {
+    border-bottom-color: #28a745 !important;
+}
+
+.arrow-danger {
+    border-bottom-color: #dc3545 !important;
+}
+
+.arrow-warning {
+    border-bottom-color: #ffc107 !important;
+}
+
+.arrow-info {
+    border-bottom-color: #17a2b8 !important;
+}
+
+.arrow-light {
+    border-bottom-color: #f8f9fa !important;
+}
+
+.arrow-dark {
+    border-bottom-color: #343a40 !important;
+}
+
+.bag-notification-wrapper {
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* Allauth form formatting */
+
+.lgimg {
+    background-image: url("/static/media/dumbbell.jpg");
+}
+
+.login-or {
+    color: #fff;
+    font-size: 5rem;
+}
+.allauth-form-inner-content {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+.allauth-form-inner-content p {
+    margin-top: 1.5rem; /* mt-4 */
+    color: #ffffff; /* text-secondary */
+}
+
+.allauth-form-inner-content input {
+    border-color: #000;
+    border-radius: 0;
+}
+
+.allauth-form-inner-content label:not([for="id_remember"]) {
+    display: none;
+}
+
+.allauth-form-inner-content input::placeholder {
+    color: #aab7c4;
+}
+
+.allauth-form-inner-content button,
+.allauth-form-inner-content input[type="submit"] {
+    /* btn */
+    display: inline-block;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #17a2b8;
+    border: 1px solid #000;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 10px;
+
+    /* standard bootstrap btn transitions */
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.allauth-form-inner-content button:hover,
+.allauth-form-inner-content input[type="submit"]:hover {
+    color: #fff;
+    background-color: #17a2b8;
+    border-color: #222;
+    transform: scale(1.1);
+}
+
+.allauth-form-inner-content a {
+    color: #17a2b8; /* text-info */
+}
+
+/* Product Form */
+
+.card-footer a:hover {
+    text-decoration: none;
+}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-file input[type="file"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.custom-checkbox .custom-control-label::before {
+    border-radius: 0;
+    border-color: #dc3545;
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    border-radius: 0;
+}
+
+/* -------------------------------- Media Queries */
+
+/* fixed top navbar only on medium and up */
+@media (min-width: 992px) {
+    .header-container {
+        padding-top: 164px;
+    }
+}
+
+@media (max-width: 992px) {
+    .products {
+        padding-top: 82px;
+    }
+    .about {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .container-headline h1 {
+        font-size: 3rem;
+    }
+    #fh5co-footer {
+        padding: 3em 0;
+    }
+    #fh5co-footer .fh5co-widget {
+        text-align: left;
+    }
+    .products {
+        padding-top: 164px;
+    }
+    .lose-weight h1 {
+        font-size: 25px;
+    }
+}
