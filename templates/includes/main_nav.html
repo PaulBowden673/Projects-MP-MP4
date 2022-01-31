@@ -23,15 +23,15 @@
                 SHOP
             </a>
             <div class="dropdown-menu border-0.5" aria-labelledby="store">
-                <a href="" class="dropdown-item">All products</a>
-                <a href="" class="dropdown-item">BCAA</a>
-                <a href="" class="dropdown-item">Vitamins</a>
-                <a href="" class="dropdown-item">Proteins</a>
-                <a href="" class="dropdown-item">Fat Burners</a>
-                <a href="" class="dropdown-item">Pre Workout</a>
-                <a href="" class="dropdown-item">Accesories</a>
-                <a href="" class="dropdown-item">Mens Cloathing</a>
-                <a href="" class="dropdown-item">Womens Cloathing</a>
+                <a href="{% url 'products' %}" class="dropdown-item">All products</a>
+                <a href="{% url 'products' %}?category=bcaa" class="dropdown-item">BCAA</a>
+                <a href="{% url 'products' %}?category=vitamins" class="dropdown-item">Vitamins</a>
+                <a href="{% url 'products' %}?category=proteins" class="dropdown-item">Proteins</a>
+                <a href="{% url 'products' %}?category=featburner" class="dropdown-item">Fat Burners</a>
+                <a href="{% url 'products' %}?category=preworkout" class="dropdown-item">Pre Workout</a>
+                <a href="{% url 'products' %}?category=accesories" class="dropdown-item">Accesories</a>
+                <a href="{% url 'products' %}?category=man-cloathing" class="dropdown-item">Mens Cloathing</a>
+                <a href="{% url 'products' %}?category=women_cloathing" class="dropdown-item">Womens Cloathing</a>
             </div>
         </li>
 
