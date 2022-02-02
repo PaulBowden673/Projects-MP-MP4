@@ -204,7 +204,7 @@ STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
 if 'DEVELOPMENT' in os.environ:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
     NOTIFY_EMAIL = os.environ.get('NOTIFY_EMAIL')
-    DEFAULT_FROM_EMAIL = 'nemanjakraljic@gmail.com'
+    DEFAULT_FROM_EMAIL = 'maximum_effort@example.com'
 else:
     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
     EMAIL_USE_TLS = True

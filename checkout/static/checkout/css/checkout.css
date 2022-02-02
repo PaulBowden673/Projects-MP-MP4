@@ -45,3 +45,7 @@ select:invalid,
 select option[value=""] {
     color: #aab7c4 !important;
 }
+
+.order-history {
+  background-color: #fff;
+}
