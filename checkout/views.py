@@ -2,13 +2,16 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpR
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
+
 from .forms import OrderForm
 from .models import Order, OrderLineItem
 from products.models import Product
-# from profiles.forms import UserProfileForm
-# from profiles.models import UserProfile
+#from profiles.forms import UserProfileForm
+#from profiles.models import UserProfile
 from bag.contexts import bag_contents
 
+import stripe
+import json
 
 
 @require_POST
@@ -94,15 +97,15 @@ def checkout(request):
         current_bag = bag_contents(request)
         total = current_bag['grand_total']
         stripe_total = round(total * 100)
-       # stripe.api_key = stripe_secret_key
-       # intent = stripe.PaymentIntent.create(
-        #amount=stripe_total,
-        #currency=settings.STRIPE_CURRENCY,
-        #)
+        stripe.api_key = stripe_secret_key
+        intent = stripe.PaymentIntent.create(
+            amount=stripe_total,
+            currency=settings.STRIPE_CURRENCY,
+        )
 
         if request.user.is_authenticated:
             try:
-               # profile = UserProfile.objects.get(user=request.user)
+                profile = UserProfile.objects.get(user=request.user)
                 order_form = OrderForm(initial={
                     'full_name': profile.user.get_full_name(),
                     'email': profile.user.email,
@@ -126,8 +129,8 @@ def checkout(request):
     template = 'checkout/checkout.html'
     context = {
         'order_form': order_form,
-        'stripe_public_key': 'pk_test_51KOgQ2D6bb4idQmttnr62dXE5tN6TiaJTWNmiXN6GxLe7Cw0Rs2vU2Sitm93qtIndXpkNDvmyV3YEAOzp18ZpVFt00HXIMzrDL',
-        'client_secret': 'intent.client_secret',
+        'stripe_public_key': stripe_public_key,
+        'client_secret': intent.client_secret,
     }
 
     return render(request, template, context)
