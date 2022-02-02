@@ -49,3 +49,11 @@ select option[value=""] {
 .order-history {
   background-color: #fff;
 }
+
+.loading-spinner {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100%;
+}
