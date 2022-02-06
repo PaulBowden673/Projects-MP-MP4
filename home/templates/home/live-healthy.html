@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+{% endblock %}
+
+{% block content %}
+<div id="healthy">
+    <div class="overlay"></div>
+    <div class="container lose-weight">
+        <div class="row">
+            <div class="col">
+                <h1>Live Healthy</h1>
+                <p>
+                    A healthy lifestyle is the basis of physical health and mental well-being. The care for your
+                    physical and mental health starts with a healthy diet and regular physical activity, while dietary
+                    supplements help you enrich your
+                    diet and provide nutrients that you often lack due to stressful lifestyle, irregular and poor diet,
+                    limited energy intake, etc.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------3 cards ------>
+<div class="container-fluid">
+    <div class="row rekomend">
+        <div class="card-container card-group">
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="card">
+                    <h3 class="card-title text-center pt-3">IMMUNE SYSTEM</h3>
+                    <img src="{% static 'media/fat-burning.jpg' %}" class="card_img card_img-bottom" alt="" />
+                    
+                    <h4 class="text-center text-black">vitamin and mineral supplements to help you meet the
+                        needs of micronutrients.</h4>
+                    <div class="card-footer">
+                        <h3 class="text-center p-2">
+                            <a href="{% url 'products' %}?category=vitamins"><button type="button"
+                                    class="btn btn-danger btn-block">Vitamins</button></a>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="card">
+                    <h3 class="card-title text-center pt-3">Have Better sleep</h3>
+                    <img src="{% static 'media/sleep.jpg' %}" class="card_img card_img-bottom" alt="" />
+                    <h4 class="text-center">Here you can find food supplements that support the normal body functions.
+                    </h4>
+                    <div class="card-footer">
+                        <h3 class="text-center p-2">
+                            <a href="{% url 'products' %}"><button type="button"
+                                    class="btn btn-success btn-block">Products</button></a>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="card">
+                    <h3 class="card-title text-center pt-3">Wear better clothes</h3>
+                    <img src="{% static 'media/clothes.jpg' %}" class="card_img card_img-bottom" alt="" />
+                    <h4 class="text-center">Our Sports-wear items will make you feel better and look like a pro!</h4>
+                    <div class="card-footer">
+                        <h3 class="text-center p-2">
+                            <a href="{% url 'products' %}?category=women_cloathing"><button type="button"
+                                    class="btn btn-info">Women</button></a>
+                            <a href="{% url 'products' %}?category=man-cloathing"><button type="button"
+                                    class="btn btn-info">Man</button></a>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
