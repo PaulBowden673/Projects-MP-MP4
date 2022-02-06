@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+{% endblock %}
+
+{% block content %}
+<div id="gain-weight">
+    <div class="overlay"></div>
+    <div class="container gain-weight">
+        <div class="row">
+            <div class="col">
+                <h1>Muscle mass gain</h1>
+                <h5>
+                    To gain muscle mass one requires time, persistence, and discipline. The key factors for gaining
+                    muscle mass are the calorific surplus (you need to consume more calories than you burn) and a
+                    sufficient protein intake (2-3 g per
+                    kilogram of body weight). An appropriate nutrition plan with sufficient caloric intake and an
+                    appropriate ratio of macro nutrients (protein, carbohydrate and fat) will, in combination with the
+                    right training method, enable
+                    the gain of muscle mass.
+                </h5>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------3 cards ------>
+<div class="container-fluid">
+    <div class="row rekomend">
+        <div class="card-container card-group">
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="card">
+                    <h3 class="card-title text-center pt-3">Before Activity</h3>
+                    <img src="{% static 'media/fat-burning.jpg' %}" class="card_img card_img-bottom" alt="" />
+                    <p class="text-center text-black">We recommend a pre workout products. helps the body in providing
+                        energy for muscular work, thus increasing power, explosiveness and muscular endurance.</p>
+                    <div class="card-footer">
+                        <h3 class="text-center p-2">
+                            <a href="{% url 'products' %}?category=preworkout"><button type="button"
+                                    class="btn btn-danger  btn-block">Pre workout</button></a>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="card">
+                    <h3 class="card-title text-center pt-3">During Activity</h3>
+                    <img src="{% static 'media/training.jpg' %}" class="card_img card_img-bottom" alt="" />
+                    <p class="text-center">We recommend that you ensure adequate hydration, especially in case of
+                        long-lasting intensive activities and hot temperatures. Bcaa is the best for that.</p>
+                    <div class="card-footer">
+                        <h3 class="text-center p-2">
+                            <a href="{% url 'products' %}?category=bcaa"><button type="button"
+                                    class="btn btn-success  btn-block">BCAA</button></a>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="card">
+                    <h3 class="card-title text-center pt-3">After Activity</h3>
+                    <img src="{% static 'media/protein-shakes.jpg' %}" class="card_img card_img-bottom" alt="" />
+                    <p class="text-center">After training, muscles can easily absorb nutrients, therefore it is
+                        advisable to provide protein in combination with carbohydrates as soon as possible after
+                        training.</p>
+                    <div class="card-footer">
+                        <h3 class="text-center p-2">
+                            <a href="{% url 'products' %}?category=proteins"><button type="button"
+                                    class="btn btn-info btn-block">Proteins</button></a>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
