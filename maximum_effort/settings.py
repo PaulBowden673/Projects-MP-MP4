@@ -125,7 +125,7 @@ WSGI_APPLICATION = 'maximum_effort.wsgi.application'
 
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
-        'default': dj_database_url.parse(os.environ.get('postgres://omnvonftxiuzpu:65eb217e8e2f1137e91d70c69fc20858ee1b3a49574bdb8fa26c6297eaef94e3@ec2-54-195-76-73.eu-west-1.compute.amazonaws.com:5432/dands4l4j6ul8m'))
+        'default': dj_database_url.config(os.environ.get('postgres://omnvonftxiuzpu:65eb217e8e2f1137e91d70c69fc20858ee1b3a49574bdb8fa26c6297eaef94e3@ec2-54-195-76-73.eu-west-1.compute.amazonaws.com:5432/dands4l4j6ul8m'))
     }
 else:
     DATABASES = {
