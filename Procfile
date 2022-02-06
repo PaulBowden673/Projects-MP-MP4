@@ -1,1 +1,1 @@
-web: gunicorn maxumim_effort.wsgi:application
+web: gunicorn maxmimum_effort.wsgi:application
