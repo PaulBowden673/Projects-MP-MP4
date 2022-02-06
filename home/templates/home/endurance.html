@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+{% endblock %}
+
+{% block content %}
+<div id="endurance">
+    <div class="overlay"></div>
+    <div class="container lose-weight">
+        <div class="row">
+        <div class="col">
+            <h1>Endurance</h1>
+            <h5>
+                In endurance sports, the most important thing to take care of is adequate hydration of the body and
+                sufficient energy intake. It is also important not to forget to consume enough protein, which is a
+                building unit of the
+                muscles and therefore indispensable for the recovery of micro-injuries that occur during physical
+                strain.
+            </h5>
+        </div>
+    </div>
+</div>
+</div>
+<!-----------3 cards ------>
+<div class="container-fluid">
+    <div class="row rekomend">
+        <div class="card-container card-group">
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="card">
+                    <h3 class="card-title text-center pt-3">Before Activity</h3>
+                    <img src="{% static 'media/fat-burning.jpg' %}" class="card_img card_img-bottom" alt="" />
+                    <p class="text-center text-black">The combination of beta-alanine and l-arginine will increase
+                        muscle endurance during long-lasting and high-intensity trainings.</p>
+                    <div class="card-footer">
+                        <h3 class="text-center p-2">
+                        <a href="{% url 'products' %}?category=vitamins"><button type="button"
+                                class="btn btn-danger btn-block">Vitamins</button></a>
+                    </h3>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="card">
+                    <h3 class="card-title text-center pt-3">During Activity</h3>
+                    <img src="{% static 'media/training.jpg' %}" class="card_img card_img-bottom" alt="" />
+                    <p class="text-center">We recommend that you ensure adequate hydration, especially in case of
+                        long-lasting intensive activities and hot temperatures. BCAA is the best for that.</p>
+                    <div class="card-footer">
+                        <h3 class="text-center p-2">
+                        <a href="{% url 'products' %}?category=bcaa"><button type="button"
+                                class="btn btn-success btn-block">BCAA</button></a>
+                    </h3>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="card">
+                    <h3 class="card-title text-center pt-3">After Activity</h3>
+                    <img src="{% static 'media/protein-shakes.jpg' %}" class="card_img card_img-bottom" alt="" />
+                    <p class="text-center">We recommend a blend of proteins and carbohydrates in order to restore
+                        glycogen reserves as soon as possible and for the repair of micro damage of muscle tissue.</p>
+                    <div class="card-footer">
+                        <h3 class="text-center p-2">
+                        <a href="{% url 'products' %}?category=proteins"><button type="button"
+                                class="btn btn-info  btn-block">Proteins</button></a>
+                    </h3>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
