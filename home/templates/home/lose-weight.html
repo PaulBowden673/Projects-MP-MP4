@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+{% endblock %}
+
+{% block content %}
+<div id="lose-weight">
+    <div class="overlay"></div>
+    <div class="container lose-weight">
+        <div class="row">
+            <div class="col">
+                <h1>Weight Loss</h1>
+                <h5>
+                    Weight loss or body makeover is a long-lasting process, where regulated diet and regular physical
+                    activity play the key role, while products recommended below can help you shape your body and speed
+                    up
+                    the weight loss
+                    process.
+                </h5>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------3 cards ------>
+<div class="container-fluid">
+    <div class="row rekomend">
+        <div class="card-container card-group">
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="card">
+                    <h3 class="card-title text-center pt-3">Before Activity</h3>
+                    <img src="{% static 'media/fat-burning.jpg' %}" class="card_img card_img-bottom" alt="" />
+                    <p class="text-center text-black">We recommend products for faster fat burning and more energy in
+                        training. You can choose between thermogenics and/or l-carnitine.</p>
+                    <div class="card-footer">
+                    <h3 class="text-center p-2">
+                        <a href="{% url 'products' %}?category=featburner"><button type="button"
+                                class="btn btn-danger btn-block">Feat Burners</button></a>
+                    </h3>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="card">
+                    <h3 class="card-title text-center pt-3">During Activity</h3>
+                    <img src="{% static 'media/training.jpg' %}" class="card_img card_img-bottom" alt="" />
+                    <p class="text-center">We recommend that you ensure adequate hydration, especially in case of
+                        long-lasting intensive activities and hot temperatures. BCAA is the best for that.</p>
+                    <div class="card-footer">
+                        <h3 class="text-center p-2">
+                        <a href="{% url 'products' %}?category=bcaa"><button type="button"
+                                class="btn btn-success btn-block">BCAA</button></a>
+                    </h3>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="card">
+                    <h3 class="card-title text-center pt-3">After Activity</h3>
+                    <img src="{% static 'media/protein-shakes.jpg' %}" class="card_img card_img-bottom" alt="" />
+                    <p class="text-center">Whey protein powders are an ideal choice for rapid and effective
+                        regeneration of
+                        muscle tissue, due to their easy digestibility and rapid absorption.</p>
+                    <div class="card-footer">
+                        <h3 class="text-center p-2">
+                        <a href="{% url 'products' %}?category=proteins"><button type="button"
+                                class="btn btn-info btn-block">Proteins</button></a>
+                    </h3>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
