@@ -251,8 +251,9 @@ body {
     background-size: cover;
 }
 
-/* About page */
-#about_page {
+/* About page & Contact page*/
+#about_page,
+#contact_page {
     background-image: url("/static/media/about.jpg");
     background-size: cover;
     position: relative;
@@ -278,7 +279,7 @@ body {
     width: 50%;
 }
 
-.about h1 {
+.about h3 {
     font-family: "Stalinist One", cursive;
     text-decoration: underline;
     margin-bottom: 40px;

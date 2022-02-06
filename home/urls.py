@@ -1,5 +1,6 @@
 from django.urls import path
-from home.views import AboutView  # , LoseweightView, GainweightView, EnduranceView, LivehealthyView, ContactView
+from home.views import AboutView, ContactView
+# , LoseweightView, GainweightView, EnduranceView, LivehealthyView
 from . import views
 
 urlpatterns = [
@@ -9,5 +10,5 @@ urlpatterns = [
     # path('gain-weight/', GainweightView.as_view(), name='gain-weight'),
     # path('endurance/', EnduranceView.as_view(), name='endurance'),
     # path('live-healthy/', LivehealthyView.as_view(), name='live-healthy'),
-    # path('contact/', ContactView.as_view(), name='contact'),
+    path('contact/', ContactView.as_view(), name='contact'),
 ]

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+{% endblock %}
+
+{% block content %}
+<div id="contact_page">
+    <div class="overlay"></div>
+    <div class="container about mt-5">
+        <div class="row mt-5">
+            <div class="col">
+                <h3>Contact Us</h3>
+                <form method="POST" class="text-wht p4 mb-4 aw">
+                    {% csrf_token %}
+                    {{ form|crispy }}
+                    <h4><input type="submit" class="btn btn-warning w-50" value="Submit message" /></h4>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
