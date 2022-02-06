@@ -25,10 +25,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get('SECRET_KEY', 'p@ei#69*b*zz3u4yie-$()@cy^l(+x9&@6ypx+r0lm(3%_9hr7')
 
-# SECURITY WARNING: don't run with debug turned on in production!
+# SECURITY WARNIN
+# G: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['tlp-gym-community.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['maximum-effort.herokuapp.com', 'localhost']
 
 
 # Application definition
