@@ -12,8 +12,13 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 import os
 from pathlib import Path
+import environ
 import dj_database_url
 
+
+env = environ.Env()
+
+environ.Env.read_env()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -23,7 +28,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY', 'lse46fz7iv9yr!4u#(ge0(is_c09fq=ai6at@lsej78_q6v-8l')
+SECRET_KEY = os.environ.get('SECRET_KEY', 'lse46fz7iv9yr4u#(ge0(is_c09fq=ai6at@lsej78_q6v-8l')
 
 # SECURITY WARNIN
 # G: don't run with debug turned on in production!
@@ -121,12 +126,11 @@ WSGI_APPLICATION = 'maximum_effort.wsgi.application'
 
 
 # Database
-# https://docs.djangoproject.com/en/3.0/ref/settings/#databases
+# https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
-        'default': dj_database_url.parse(os.environ.get(
-            'postgres://omnvonftxiuzpu:65eb217e8e2f1137e91d70c69fc20858ee1b3a49574bdb8fa26c6297eaef94e3@ec2-54-195-76-73.eu-west-1.compute.amazonaws.com:5432/dands4l4j6ul8m'))
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
 else:
     DATABASES = {
