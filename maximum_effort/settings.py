@@ -130,7 +130,7 @@ WSGI_APPLICATION = 'maximum_effort.wsgi.application'
 
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
-        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+        'default': dj_database_url.parse('postgres://yiwzeqhjnlbfyf:ac2c0c92ca6e0656fadf2de384a6357dcbc4978b0a977fd3feeecbf882857668@ec2-54-155-35-88.eu-west-1.compute.amazonaws.com:5432/ddsiuiqlc57ide')
     }
 else:
     DATABASES = {
