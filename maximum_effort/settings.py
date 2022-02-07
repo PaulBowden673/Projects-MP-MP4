@@ -12,11 +12,13 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 import os
 from pathlib import Path
-
+import environ
 import dj_database_url
 
 
+env = environ.Env()
 
+environ.Env.read_env()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -128,7 +130,7 @@ WSGI_APPLICATION = 'maximum_effort.wsgi.application'
 
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
-        'default': dj_database_url.parse('postgres://yiwzeqhjnlbfyf:ac2c0c92ca6e0656fadf2de384a6357dcbc4978b0a977fd3feeecbf882857668@ec2-54-155-35-88.eu-west-1.compute.amazonaws.com:5432/ddsiuiqlc57ide')
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
 else:
     DATABASES = {
