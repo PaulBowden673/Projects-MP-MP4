@@ -24,7 +24,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
-
 # SECURITY WARNIN
 # G: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
@@ -208,8 +207,8 @@ if 'USE_AWS' in os.environ:
 FREE_DELIVERY_THRESHOLD = 70
 STANDARD_DELIVERY_PERCENTAGE = 10
 STRIPE_CURRENCY = 'gbp'
-STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', 'pk_test_51KOgQ2D6bb4idQmttnr62dXE5tN6TiaJTWNmiXN6GxLe7Cw0Rs2vU2Sitm93qtIndXpkNDvmyV3YEAOzp18ZpVFt00HXIMzrDL')
-STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', 'sk_test_51KOgQ2D6bb4idQmtXY3uhSlzO0NMMjmtLKcVmqXDug3nGemXLLT0iyIKnUKAkyv53dQ5axDvChLukPcPh9hJUsKy00c2XWC28x')
+STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
+STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
 STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
 
 if 'DEVELOPMENT' in os.environ:
