@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'lse46fz7iv9yr4u#(ge0(is_c09fq=ai6at@l
 # G: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['maximum-effort-django.herokuapp.com/maximum-effort-django/', 'localhost']
+ALLOWED_HOSTS = ['maximum-effort-django.herokuapp.com', 'localhost']
 
 
 # Application definition
