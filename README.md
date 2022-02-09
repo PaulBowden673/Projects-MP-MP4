@@ -72,8 +72,8 @@ We will be using [Django](<https://www.djangoproject.com/>) web frameworks and t
 Becoming a user, registration is required. When the user is registrated, they are able to log in, edit profile information, see their order history. Main access as a user is to be able to shop and  participate in blog community, write topics, comment, like and review them (in future releases)
  
 - **Administration** 
-Site will have it's admin area from where control of the site will be able (Django admin issue - not allowing superusers to log in on deployed site)
-From admin area, store will be in control also, adding, editing or deleting products, also putting them out of stock. 
+Site will has an admin area which allows Superusers to make changes to the available products.
+From admin area, user management, adding, editing or deleting products, also putting them out of stock. 
 Collecting all the orders as they are made. 
 Control of the blog, admin will be first to read the new topic and decide if it's appropriate publish it.  
  
@@ -342,23 +342,27 @@ This makes it quicker to find the product you are looking for.
 </div> 
  
 ## Testing
+
+I have tested the site adn only found issues with verfy email due to emails not being sent from deployed site.
+
 #### Goals
 When I click on "Goals", the dropdown works and the links to Lose Weight, Gain Weight, Live Healthy and Endurance work when clicked amd redirect to the correct pages. All the links back to filtered products on each page work as expected.
 
 #### Create a new user account
-I created my main account, as well as a few test accounts to test this functionality. Clicking on the "Register" button in the navbar opens the form, where I can put username and password to create a new account. I tried to input an existing username, not matching passwords in "password" and "confirm password" fields, and input less then 3 or more then 15 charachters. In all cases I got a corresponding error message. As well as that, I tried to leave an empty field and submit the form, but got an error message again asking to fill the field. When the form was successfully submitted, I was given a message telling me to verfy email. The email was not recieved ( issues with using gmail to send emails - not fixed) However on the localhost I was able to verfy the email address by following the link in the terminal and log into the site.
+I created my main account, as well as a few test accounts to test this functionality. Clicking on the "Register" button in the navbar opens the form, where I can put username and password to create a new account. I tried to input an existing username, not matching passwords in "password" and "confirm password" fields, and input less then 3 or more then 15 charachters. In all cases I got a corresponding error message. As well as that, I tried to leave an empty field and submit the form, but got an error message again asking to fill the field. When the form was successfully submitted, I was given a message telling me to verfy email. The email was not recieved ( issues with using gmail to send emails - not fixed) However on the localhost I was able to verfy the email address by following the link in the terminal and log into the site as well as verify email addresses in the admin
 
 #### Login
 Clicking on the "Login" button in the navbar opens the form, allowing me to login to my account. I tried to leave empty fields or input incorrect details, but I was not able to submit the form if something was entered incorrectly. After a successful login I was redirected to the home page, seeing the message that I was logged in.
 
 #### Delete Account
-I deleted some testing accounts to test the functionality. This can currently only be done by Suoerusers logged into the django admin ( not allowing superusers to log in to the admin on deployed site)
+I deleted some testing accounts to test the functionality. This can only be done by Suoerusers logged into the django admin.
 
 #### Add New product
 I added several products to check the functionality throughout the development. If I leave some of the required fields empty, I will not be able to submit the form. If the added product does not have an image the page should display moimage.jpg in place of the missing image
 
-#### Edit product
-If I am logged, I can see the button "product management" in the account dropdown. I can then add products or edit them by completing the forms and submitting
+#### Edit/Delete product
+If I am logged, I can see the button "product management" in the account dropdown. I can then add products or edit them by completing the forms and submitting. the button for delte item on the products page will delete items without the need for a form.
+
 
 
 #### Devices
@@ -379,7 +383,6 @@ If I am logged, I can see the button "product management" in the account dropdow
 
 ## Issues/Bugs
 
-- Issue with Django admin not allowing registered superusers to log in on deployed site. I have not been able to fix this 
 - Issue with deployed site not linking to bag.html was discovered after deploying. This was fixed by checking the template folders and finding that the folder structure was wrong.
 - Issue with emails not being sent on deployed site allowing users to verify email address and log in. This may be due to changes in gmail settings blocking emails being sent ( code was taken and method followed from Boutique Ado mini-project/walkthrough and not changed)
 - Further Stripe testing needs to be carried out to put this site into production
