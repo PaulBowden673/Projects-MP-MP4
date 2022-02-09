@@ -1,14 +1,15 @@
 <h1 align="center">Maximum Effort Fitness site</h1> 
+
+<img src="https://github.com/PaulBowden673/Projects-MP-MP4/blob/main/assets/documents/amiRespomsive%20.png" width="100%" alt="Maximum Effort Fitness Website"> 
+
  
-## <i>Full Stack Frameworks With Django, 4th Milestone Project - Code Institute</i> 
- 
- 
+
  **Maximum Effort** - is an online gym training community designed to help to and to get help from members to members! 
  
-[View the live project here.](https://maximum-effort-django.herokuapp.com/) 
+<a href=https://maximum-effort-django.herokuapp.com/" rel="nofollow" target="_blank">Click  here</a> to access the site.
+
  
-<h2 align="center"><img src=""></h2> 
- 
+
 ## Table of Contents 
  
 > 1.  [**UX**](#ux) 
@@ -27,6 +28,8 @@
 > 8.  [**Credits & Acknowledgements**](#credits) 
  
  ## UX 
+                                                                                    
+ ## <i>Full Stack Frameworks With Django, 4th Milestone Project - Code Institute</i>                                                                                    
  
  My goal is to make an online community web site which contains a small online store where users can by products which can help them progress better and faster. I also intended to add a blog where users can post topics and interact which each other, give or get tips from persons that are on a higher or lower level. 
  
