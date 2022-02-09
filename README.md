@@ -346,7 +346,7 @@ This makes it quicker to find the product you are looking for.
  
 ## Testing
 
-I have tested the site adn only found issues with verfy email due to emails not being sent from deployed site.
+I have tested the site and found issues with verfy email due to emails not being sent from deployed site.
 
 #### Goals
 When I click on "Goals", the dropdown works and the links to Lose Weight, Gain Weight, Live Healthy and Endurance work when clicked amd redirect to the correct pages. All the links back to filtered products on each page work as expected.
@@ -366,7 +366,86 @@ I added several products to check the functionality throughout the development. 
 #### Edit/Delete product
 If I am logged, I can see the button "product management" in the account dropdown. I can then add products or edit them by completing the forms and submitting. the button for delte item on the products page will delete items without the need for a form.
 
+#### User Stories
 
+###### Users
+* As a user, I want to access the website from any device. 
+
+	Site is fully responsive across many devices. 
+
+* As a user, I want to navigate easily through the site. 
+
+	Navigation through the links at the top of the page both on Desktop and Mobile. 
+
+* As a user, I want to create account easily.	 
+
+	Sign up links are located in the dropdown menu on the account button as well as in the centre of the main page. 
+
+* As a user, I want to be able to edit my profile, my password, shipping address. 
+
+	On the profile page, once logged in the user can alter shipping details. 
+
+* As a user, I want to easy access to web store, sort products by category, price, name. 
+
+	Once the user has clicked into the product page, products can be filtered and sorted using the options provided. 
+
+* As a user, I want to be able to read product details, to review and rate them. 
+
+	On the Product details page the user can read all the details about the product. Reviews and ratings not available yet. 
+
+* As a user, I want to search for products, blog topics and trainings. 
+
+	User van use the search function to search for particular products. Training plans and Blog not yet implemented. 
+
+* As a user, I want to be able to order products from online store. 
+
+	Users can select products and add to cart, view cart and purchase products. 
+
+* As a user, I want to be able to Create, Read, Update and Delete own blog topics. 
+
+	Not yet implemented. 
+
+* As a user, I want to be able to read, comment and like other blog topics. 
+
+	Not yet implemented. 
+
+* As a user, I want to be able to view my past orders. 
+
+	Order History is available on the Profile page for logged in users. 
+
+* As a user, I want to link to my social accounts. 
+
+	Not yet implemented. 
+
+###### Admin 
+
+* As administrator, I want to add, edit, delete products, blogs, and training programs. 
+
+	Logged in Superusers are able to add, edit and delete products. Blogs and Training plans not yet implemented. 
+
+* As administrator, I want to be able to login from any page. 
+
+	Login link is available on all pages. 
+
+* As administrator, I want to be first who see the blog topic and if it's appropriate allow it to others to view it. 
+
+	Not yet implemented. 
+
+* As administrator, I want to see all the orders that have taken place. 
+
+Logging into the Django admin allows Superusers to see all orders. 
+
+* As administrator, I expect to see a ‘No Image’ image if there is no image for a product. 
+
+	Issue with noimage image displaying on Products missing images. Not fixed. 
+
+* As administrator, I want to be able to delete a member if he/she has violated rights of a blog. 
+
+	Superusers can log into the admin and delete users. 
+
+* As administrator, I want to be able to put products out of stock. 
+
+	Superusers can edit and delete products. Function for displaying products as out of stock not implemented without deleting the product from the database. 
 
 #### Devices
 - Samsung S9
