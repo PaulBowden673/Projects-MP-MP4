@@ -387,37 +387,31 @@ If I am logged, I can see the button "product management" in the account dropdow
 
 ### Validation
 
-All files passed validation testing at 
+All Python files passed validation testing for PEP8 compliance (only remaining errors in files are 'line too long' - not able to shorten some lines further and 2 instances that are populated when user adds items to basket) 
 
- ###### HTML index.html page
+ ###### HTML
 
-  ![HTML Validation](https://github.com/PaulBowden673/Projects-MP-MP3/blob/main/static/documents/htmlvalidation.png)
+  ![HTML Validation](https://github.com/PaulBowden673/Projects-MP-MP4/blob/main/assets/documents/validationHTML.png)
 
 - [CSS] - Issue with validating with Bootstrap. When validated as Direct Input no issues were found
 
- #### CSS Style.css 
+ #### CSS
  
- ###### By URL
- 
-  ![CSS Validation style.css](https://github.com/PaulBowden673/Projects-MP-MP3/blob/main/static/documents/cssURLvalidation.png)
-  
-  ###### By Direct Input
-  
-  ![CSS Validation Direct Input](https://github.com/PaulBowden673/Projects-MP-MP3/blob/main/static/documents/cssvalidation.png)
+  ![CSS Validation](https://github.com/PaulBowden673/Projects-MP-MP4/blob/main/assets/documents/validationCSS.png)
 
- #### PEP8 
+ #### JS
  
- ![PEP8 Validation](https://github.com/PaulBowden673/Projects-MP-MP3/blob/main/static/documents/pep8validation.png)
+ ![JSHint Validation](https://github.com/PaulBowden673/Projects-MP-MP4/blob/main/assets/documents/validationJShint.png)
 
 - [Lighthouse]
 
  ###### Lighthouse Validation Desktop
  
-![Lighthouse Validation Desktop](https://github.com/PaulBowden673/Projects-MP-MP3/blob/main/static/documents/lighthouseDesktop.png)
+![Lighthouse Validation Desktop](https://github.com/PaulBowden673/Projects-MP-MP4/blob/main/assets/documents/validationLighthouseDesktop.png)
 
 ###### Lighthouse Validation Mobile
 
-![Lighthouse Validation Mobile](https://github.com/PaulBowden673/Projects-MP-MP3/blob/main/static/documents/lighthouseMobile.png)
+![Lighthouse Validation Mobile](https://github.com/PaulBowden673/Projects-MP-MP4/blob/main/assets/documents/validationLighthouseMobile.png)
  
  
 ## Deployment 
