@@ -57,9 +57,10 @@ class ContactView(generic.FormView):
         {message}
         """
         send_mail(
-            subject="Message from TLP contact form",
+            subject="Message from Maximum Effort contact form",
             message=full_message,
             from_email=settings.DEFAULT_FROM_EMAIL,
             recipient_list=[settings.NOTIFY_EMAIL]
         )
         return super(ContactView, self).form_invalid(form)
+
