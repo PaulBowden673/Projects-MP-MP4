@@ -273,6 +273,9 @@ For this Project I used [SQLite](https://www.sqlite.org/index.html) in developme
  
 Images are used extensively. The images chosen are all gym and fitness related. They are used as a background in most of the site. 
 All images were found on [Pixabay](https://pixabay.com//) and have a CC licence. 
+
+#### Wireframes
+- [Wireframe 2 screen sizes](https://github.com/PaulBowden673/Projects-MP-MP4/blob/main/assets/documents/milestone4-wireframe.pdf)
  
 ## Technologies 
  
