@@ -8,7 +8,7 @@
 <div class="overlay"></div>
 <div class="container-fluid products">
     <div class="row">
-        <!-----------Products nav ------>
+        <!-- Products nav -->
         <div class="col text-center mt-1">
             <ul class="nav justify-content-center">
                 <li class="nav-item">
@@ -58,7 +58,7 @@
         </div>
     </div>
     <div class="row">
-        <!-----------Product------>
+        <!-- Product -->
         <div class="product-container col-10 offset-1">
             <div class="row mt-1 mb-2">
                 <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
@@ -102,7 +102,7 @@
                         </a>
                         {% else %}
                         <a href="{% url 'product_detail' product.id %}">
-                            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png"
+                            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.jpg"
                                 alt="{{ product.name }}">
                         </a>
                         {% endif %}
