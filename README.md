@@ -390,6 +390,8 @@ If I am logged, I can see the button "product management" in the account dropdow
 All Python files passed validation testing for PEP8 compliance (only remaining errors in files are 'line too long' - not able to shorten some lines further and 2 instances that are populated when user adds items to basket) 
 
  ###### HTML
+ 
+ - Duplcate id found which is in both the mobile header and main nav and is needed 
 
   ![HTML Validation](https://github.com/PaulBowden673/Projects-MP-MP4/blob/main/assets/documents/validationHTML.png)
 
