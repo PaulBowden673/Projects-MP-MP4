@@ -146,7 +146,7 @@ Full-page background, with a container that contains buttons to sign in and regi
  
 #### Section 3 
  
-Will show the latest blog items, but the blog is currently under development. 
+Will show the latest blog items, the blog is currently under development. 
  
 <div align="right"> 
  
@@ -170,8 +170,7 @@ Will show the latest blog items, but the blog is currently under development.
  
 #### Product Details 
  
-The Details page is a container-fluid which contains image-container, product-details-container, delete/edit if Superuser, col If there is product size 
-and buttons to continuo shoping or lead to chekcout page. 
+The Details page is a container-fluid which contains image-container, product-details-container, delete/edit if Superuser,  there are product size selectors where product has sizes and buttons to continue shoping or go to chekcout page. 
  
 - Name of the product 
 - Category and Rating 
@@ -180,7 +179,6 @@ and buttons to continuo shoping or lead to chekcout page.
 - Quantity selector 
 - Add to Cart button. 
 - Product Overview - 
-  This is where there are more details about the product. 
  
 #### Shopping Cart 
  
@@ -308,7 +306,7 @@ All images were found on [Pixabay](https://pixabay.com//) and have a CC licence.
  
 </div> 
  
-### TLP Shop Features 
+### Maximum Effort Shop Features 
  
 - **Product** **Filtering**: 
   You can filter the products in the shop with category selectors: 
@@ -325,15 +323,15 @@ This makes it quicker to find the product you are looking for.
   - _Rating_ (low-high) or (high-low). 
  
 - **Product cards**: 
-  The Product have links on image and on button on bottom and will take you to the details product page. If the product does not have an image a 'No Image' image will take its place. 
+  The Product have links on image and on button on bottom and will take you to the details product page. If the product does not have an image a 'No Image' image will take its place (issue with missing images not displaying noimage) 
  
 ### Future Features 
-- Developing a blog 
+- Developing the blog 
 - Add social accounts log in, 
-- Upgrade profile app 
+- Upgrade profile app to add more user details
 - Upgrade more of the UX design 
-- No image stopped working during the development, still haven't figured out why. 
-- Contact page needs more developing, it's not sending emails. 
+- No image stopped working during the development, tried changing image from png to jpg to no success. 
+- Contact page needs more developing, it's not sending emails ( localhost emails are being sent but deployed site gmail provider is not sending emails)
 - Upgrading store with more products 
 - Developing personal training programs section. 
  
@@ -343,8 +341,82 @@ This makes it quicker to find the product you are looking for.
  
 </div> 
  
-## Testing 
-- This site is not tested, but is about to be, after submission, time is the factor. 
+## Testing
+Goals
+When I click on "Goals", the dropdown works and the links to Lose Weight, Gain Weight, Live Healthy and Endurance work when clicked amd redirect to the correct pages. All the links back to filtered products on each page work as expected.
+
+Create a new user account
+I created my main account, as well as a few test accounts to test this functionality. Clicking on the "Register" button in the navbar opens the form, where I can put username and password to create a new account. I tried to input an existing username, not matching passwords in "password" and "confirm password" fields, and input less then 3 or more then 15 charachters. In all cases I got a corresponding error message. As well as that, I tried to leave an empty field and submit the form, but got an error message again asking to fill the field. When the form was successfully submitted, I was given a message telling me to verfy email. The email was not recieved ( issues with using gmail to send emails - not fixed) However on the localhost I was able to verfy the email address by following the link in the terminal and log into the site.
+
+Login
+Clicking on the "Login" button in the navbar opens the form, allowing me to login to my account. I tried to leave empty fields or input incorrect details, but I was not able to submit the form if something was entered incorrectly. After a successful login I was redirected to the home page, seeing the message that I was logged in.
+
+Delete Account
+I deleted some testing accounts to test the functionality. This can currently only be done by Suoerusers logged into the django admin ( not allowing superusers to log in to the admin on deployed site)
+
+Add New product
+I added several products to check the functionality throughout the development. If I leave some of the required fields empty, I will not be able to submit the form. If the added product does not have an image the page should display moimage.jpg in place of the missing image
+
+Edit product
+If I am logged, I can see the button "product management" in the account dropdown. I can then add products or edit them by completing the forms and submitting
+
+
+#### Devices
+- Samsung S9
+- Samsung S21
+- Samsung S6 Lte Tablet
+- Ipad 
+- Iphone 6/7/8
+- Desktop with 4K 2056px Monitor
+- Dell Inspiron 5405 Laptop 
+
+#### Browsers
+
+- Microsoft Edge
+- Chrome
+- Firefox
+- Safari 
+
+## Issues/Bugs
+
+- Issue with Django admin not allowing registered superusers to log in on deployed site. I have not been able to fix this 
+- Issue with deployed site not linking to bag.html was discovered after deploying. This was fixed by checking the template folders and finding that the folder structure was wrong.
+- Issue with emails not being sent on deployed site allowing users to verify email address and log in. This may be due to changes in gmail settings blocking emails being sent ( code was taken and method followed from Boutique Ado mini-project/walkthrough and not changed) 
+
+### Validation
+
+All files passed validation testing at 
+
+ ###### HTML index.html page
+
+  ![HTML Validation](https://github.com/PaulBowden673/Projects-MP-MP3/blob/main/static/documents/htmlvalidation.png)
+
+- [CSS] - Issue with validating with Bootstrap. When validated as Direct Input no issues were found
+
+ #### CSS Style.css 
+ 
+ ###### By URL
+ 
+  ![CSS Validation style.css](https://github.com/PaulBowden673/Projects-MP-MP3/blob/main/static/documents/cssURLvalidation.png)
+  
+  ###### By Direct Input
+  
+  ![CSS Validation Direct Input](https://github.com/PaulBowden673/Projects-MP-MP3/blob/main/static/documents/cssvalidation.png)
+
+ #### PEP8 
+ 
+ ![PEP8 Validation](https://github.com/PaulBowden673/Projects-MP-MP3/blob/main/static/documents/pep8validation.png)
+
+- [Lighthouse]
+
+ ###### Lighthouse Validation Desktop
+ 
+![Lighthouse Validation Desktop](https://github.com/PaulBowden673/Projects-MP-MP3/blob/main/static/documents/lighthouseDesktop.png)
+
+###### Lighthouse Validation Mobile
+
+![Lighthouse Validation Mobile](https://github.com/PaulBowden673/Projects-MP-MP3/blob/main/static/documents/lighthouseMobile.png)
+ 
  
 ## Deployment 
  
