@@ -208,7 +208,7 @@ Full page layout with the user order form to complete:
 - Adjust cart button - If you need to adjust the cart. 
 - Complete Order - Sends the card informtion to [Stripe](https://stripe.com/) 
  
-> #### Stripe Development Card 
+#### Stripe Development Card 
 > 
 > A [Stripe](https://stripe.com/) payment system is inplace and >takes all major cards. 
 > The numbers below are used to test the Stripe Payment software. 
@@ -342,22 +342,22 @@ This makes it quicker to find the product you are looking for.
 </div> 
  
 ## Testing
-####Goals
+#### Goals
 When I click on "Goals", the dropdown works and the links to Lose Weight, Gain Weight, Live Healthy and Endurance work when clicked amd redirect to the correct pages. All the links back to filtered products on each page work as expected.
 
-####Create a new user account
+#### Create a new user account
 I created my main account, as well as a few test accounts to test this functionality. Clicking on the "Register" button in the navbar opens the form, where I can put username and password to create a new account. I tried to input an existing username, not matching passwords in "password" and "confirm password" fields, and input less then 3 or more then 15 charachters. In all cases I got a corresponding error message. As well as that, I tried to leave an empty field and submit the form, but got an error message again asking to fill the field. When the form was successfully submitted, I was given a message telling me to verfy email. The email was not recieved ( issues with using gmail to send emails - not fixed) However on the localhost I was able to verfy the email address by following the link in the terminal and log into the site.
 
-####Login
+#### Login
 Clicking on the "Login" button in the navbar opens the form, allowing me to login to my account. I tried to leave empty fields or input incorrect details, but I was not able to submit the form if something was entered incorrectly. After a successful login I was redirected to the home page, seeing the message that I was logged in.
 
-####Delete Account
+#### Delete Account
 I deleted some testing accounts to test the functionality. This can currently only be done by Suoerusers logged into the django admin ( not allowing superusers to log in to the admin on deployed site)
 
-####Add New product
+#### Add New product
 I added several products to check the functionality throughout the development. If I leave some of the required fields empty, I will not be able to submit the form. If the added product does not have an image the page should display moimage.jpg in place of the missing image
 
-####Edit product
+#### Edit product
 If I am logged, I can see the button "product management" in the account dropdown. I can then add products or edit them by completing the forms and submitting
 
 
