@@ -69,13 +69,13 @@
 We will be using [Django](<https://www.djangoproject.com/>) web frameworks and the site will be hosted on  [Heroku](https://www.heroku.com/postgres) using [Heroku Postgres](https://www.heroku.com/postgres) for the database. 
  
 - **USER** 
-Becoming a user, registration is required. When the user i registrated, he is able to log in, edit profile information. Main acces as a user is to be able to participate in blog community, write topics, comment, like and review them. 
+Becoming a user, registration is required. When the user is registrated, they are able to log in, edit profile information, see their order history. Main access as a user is to be able to shop and  participate in blog community, write topics, comment, like and review them (in future releases)
  
 - **Administration** 
-Site will have it's admin area from where control of the site will be able. 
+Site will have it's admin area from where control of the site will be able (Django admin issue - not allowing superusers to log in on deployed site)
 From admin area, store will be in control also, adding, editing or deleting products, also putting them out of stock. 
 Collecting all the orders as they are made. 
-Control of the blog, admin will be first to read the new topic and latter if it's appropriate publish it.  
+Control of the blog, admin will be first to read the new topic and decide if it's appropriate publish it.  
  
 <div align="right"> 
  
