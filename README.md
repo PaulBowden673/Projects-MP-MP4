@@ -115,7 +115,7 @@ Full Page background with a center-block design.
  
 The navbar is fixed to top of each page, This makes navigation easer and quicker. 
  
-- **Left – Maximum Effort logo ** - Clickable links to the home page from anywhere on the web site. 
+- **Left – Maximum Effort logo** - Clickable links to the home page from anywhere on the web site. 
 - **Center - Page navigation** - This is the main pages navigation, this with change if the users is logged in or not. 
 - **Right -User login and Cart** - This changes if the user is a) logged in or B) If the user has access to the admin area. 
  
