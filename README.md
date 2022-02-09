@@ -393,7 +393,6 @@ All Python files passed validation testing for PEP8 compliance (only remaining e
 
   ![HTML Validation](https://github.com/PaulBowden673/Projects-MP-MP4/blob/main/assets/documents/validationHTML.png)
 
-- [CSS] - Issue with validating with Bootstrap. When validated as Direct Input no issues were found
 
  #### CSS
  
