@@ -6,7 +6,7 @@
 
  **Maximum Effort** - is an online gym training community designed to help to and to get help from members to members! 
  
-<a href=https://maximum-effort-django.herokuapp.com/" rel="nofollow" target="_blank"> Click  here to access the site.</a>
+<a href="https://maximum-effort-django.herokuapp.com/" rel="nofollow" target="_blank"> Click  here to access the site.</a>
 
  
 
