@@ -273,6 +273,9 @@ For this Project I used [SQLite](https://www.sqlite.org/index.html) in developme
  
 Images are used extensively. The images chosen are all gym and fitness related. They are used as a background in most of the site. 
 All images were found on [Pixabay](https://pixabay.com//) and have a CC licence. 
+
+#### Wireframes
+- [Wireframe 2 screen sizes](https://github.com/PaulBowden673/Projects-MP-MP4/blob/main/assets/documents/milestone4-wireframe.pdf)
  
 ## Technologies 
  
@@ -346,7 +349,7 @@ This makes it quicker to find the product you are looking for.
  
 ## Testing
 
-I have tested the site and found issues with verfy email due to emails not being sent from deployed site.
+I have tested the site and found issues with verfy email due to emails not being sent from deployed site. I have turned off email verification to bypass the issue for this project due to costs involved with using other providers
 
 #### Goals
 When I click on "Goals", the dropdown works and the links to Lose Weight, Gain Weight, Live Healthy and Endurance work when clicked amd redirect to the correct pages. All the links back to filtered products on each page work as expected.
@@ -358,7 +361,7 @@ I created my main account, as well as a few test accounts to test this functiona
 Clicking on the "Login" button in the navbar opens the form, allowing me to login to my account. I tried to leave empty fields or input incorrect details, but I was not able to submit the form if something was entered incorrectly. After a successful login I was redirected to the home page, seeing the message that I was logged in.
 
 #### Delete Account
-I deleted some testing accounts to test the functionality. This can only be done by Suoerusers logged into the django admin.
+I deleted some testing accounts to test the functionality. This can only be done by Superusers logged into the django admin.
 
 #### Add New product
 I added several products to check the functionality throughout the development. If I leave some of the required fields empty, I will not be able to submit the form. If the added product does not have an image the page should display moimage.jpg in place of the missing image
@@ -466,7 +469,7 @@ Logging into the Django admin allows Superusers to see all orders.
 ## Issues/Bugs
 
 - Issue with deployed site not linking to bag.html was discovered after deploying. This was fixed by checking the template folders and finding that the folder structure was wrong.
-- Issue with emails not being sent on deployed site allowing users to verify email address and log in. This may be due to changes in gmail settings blocking emails being sent ( code was taken and method followed from Boutique Ado mini-project/walkthrough and not changed)
+- Issue with emails not being sent on deployed site allowing users to verify email address and log in. This may be due to changes in gmail or AWS settings blocking emails being sent ( code was taken and method followed from Boutique Ado mini-project/walkthrough and not changed) This was bypassed by turning off email verification
 - Further Stripe testing needs to be carried out to put this site into production
 - Further Django testing needs to be completed for this site to be put into production as a finished site.
 
